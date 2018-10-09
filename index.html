@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+		<title></title>
+		<style>
+		body,
+html{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#fixed {
+    background: red;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+}
+
+#content {
+    background: blue;
+    height: 100%;
+}
+		.resp-container {
+		    position: relative;
+		    overflow: hidden;
+		    padding-top: 56.25%;
+
+		}
+
+		.resp-iframe {
+			-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); /*ios 7 border-radius-bug */
+-webkit-transform: rotate(0.000001deg); /*mac os 10.6 safari 5 border-radius-bug */
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+		max-width: 1920px;
+		max-height: 1080px;
+		}
+		</style>
+	</head>
+		<body>
+			<div class="resp-container">
+		  	<iframe class="resp-iframe"  scrolling="no" style="overflow:hidden;" src="https://www.youtube.com/embed/dDnwDjjXzjs" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</body>
+</html>
